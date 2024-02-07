@@ -55,6 +55,8 @@ jobs:
       with:
         name: my-trained-pipeline
         path: bikeshare_project/bikeshare_model/trained_models
+    - name: Package the build
+      working-directory: bikeshare_project
     - name: Install dependencies
       run: pip install --upgrade build
     - name: Build package
