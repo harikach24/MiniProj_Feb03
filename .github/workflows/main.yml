@@ -43,7 +43,7 @@ jobs:
     - name: Package the build
       working-directory: bikeshare_project
       run: |
-        py -m pip install --upgrade build
+        pip install build
     - name: Copy wheel file from dist to bikeshare_model_api folder
       run: |
         cp bikeshare_project/dist/*.whl bikeshare_project/bikeshare_model_api/.
